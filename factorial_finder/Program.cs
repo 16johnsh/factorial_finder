@@ -14,26 +14,33 @@ namespace factorial_finder
             // https://live.withcode.uk/alevel/?id=1 Solve this using both loops and recursion
             Console.WriteLine("welcome to factorial finder");
             int inp = Int32.Parse(Console.ReadLine());
+            int x = 1;
 
-            int factorial(int input)
+
+            Console.WriteLine(factorial(inp, x));
+
+
+
+            int factorial(int input, int y)
             {
 
-                int x = input;
+                
                 if (input == 0)
                 {
-                    return 1;
+                    return y;
                 }
 
 
-                if (input > 0)
+                if (input >= 2)
                 {
-
+                    input = input - 1;
                 }
-
+                y = input * y;
+                return (factorial(input, y));
 
             }
 
-            Console.WriteLine(factorial(inp));
+            
 
 
         }
