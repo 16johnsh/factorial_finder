@@ -10,6 +10,7 @@ namespace factorial_finder
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("welcome to factorial finder");
         }
     }
 }
