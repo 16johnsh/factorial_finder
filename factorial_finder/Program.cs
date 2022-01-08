@@ -19,7 +19,7 @@ namespace factorial_finder
 
             Console.WriteLine(factorial(inp, x));
 
-
+            
 
             int factorial(int input, int y)
             {
@@ -29,13 +29,9 @@ namespace factorial_finder
                 {
                     return y;
                 }
-
-
-                if (input >= 2)
-                {
-                    input = input - 1;
-                }
                 y = input * y;
+                input = input - 1;
+                
                 return (factorial(input, y));
 
             }
